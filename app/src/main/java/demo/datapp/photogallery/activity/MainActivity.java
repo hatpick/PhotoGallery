@@ -23,7 +23,6 @@ import java.util.regex.Pattern;
 
 import demo.datapp.photogallery.R;
 import demo.datapp.photogallery.adapter.PhotoAdapter;
-import demo.datapp.photogallery.helper.SpacesItemDecoration;
 import demo.datapp.photogallery.model.PhotoModel;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager mLayoutManager;
     private ArrayList<PhotoModel> photosList;
     private PhotoAdapter photoAdapter;
-    private SpacesItemDecoration spacesItemDecoration;
-    private final float ITEM_SPACING = 8f;
     private View mDecorView;
 
     private Bundle mTmpState;
@@ -54,10 +51,8 @@ public class MainActivity extends AppCompatActivity {
         photosList = new ArrayList<>();
         photoAdapter = new PhotoAdapter(this, photosList);
         photosView = (RecyclerView) findViewById(R.id.photos_view);
-        spacesItemDecoration = new SpacesItemDecoration(this, ITEM_SPACING, ITEM_PER_ROW);
         mLayoutManager = new StaggeredGridLayoutManager(ITEM_PER_ROW, StaggeredGridLayoutManager.VERTICAL);
         photosView.setItemAnimator(new DefaultItemAnimator());
-        photosView.addItemDecoration(spacesItemDecoration);
         photosView.setLayoutManager(mLayoutManager);
         photosView.setAdapter(photoAdapter);
 

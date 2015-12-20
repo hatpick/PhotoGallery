@@ -44,7 +44,7 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.PhotoHolder>
         display.getSize(size);
         int width = size.x;
 
-        int totalMargin = (int) SizeHelper.convertDpToPixel(32.0f, mContext);
+        int totalMargin = (int) SizeHelper.convertDpToPixel(48.0f, mContext);
         imageWidth = (width - totalMargin)/2;
     }
 

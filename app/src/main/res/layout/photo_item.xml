@@ -2,6 +2,7 @@
 <FrameLayout
     android:id="@+id/photo_item_holder"
     android:clickable="true"
+    android:layout_margin="8dp"
     android:background="?android:attr/selectableItemBackground"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"

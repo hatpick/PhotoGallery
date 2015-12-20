@@ -93,7 +93,6 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         photoSlider.setAdapter(pagerAdapter);
 
         closeViewer = (ImageView) findViewById(R.id.close_photo_viewer);
-        closeViewer.getLayoutParams().width = SizeHelper.getDisplayWidth(this)/4;
         closeViewer.setOnClickListener(this);
 
         fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
