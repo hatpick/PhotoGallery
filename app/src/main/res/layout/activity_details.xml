@@ -26,8 +26,8 @@
             android:src="@mipmap/ic_close"
             android:clickable="true"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
     </FrameLayout>
     <LinearLayout
         android:gravity="center"
@@ -50,37 +50,53 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="45dp">
-        <ImageView
-            android:src="@mipmap/ic_plus_one"
-            android:layout_gravity="center"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:clickable="true"
+        <FrameLayout
+            android:background="?android:attr/selectableItemBackground"
             android:layout_weight="1"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-        <ImageView
-            android:src="@mipmap/ic_message"
-            android:layout_gravity="center"
-            android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/ic_plus_one"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="?android:attr/selectableItemBackground"
             android:layout_weight="1"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-        <ImageView
-            android:src="@mipmap/ic_plus"
-            android:layout_gravity="center"
-            android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/ic_message"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="?android:attr/selectableItemBackground"
             android:layout_weight="1"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-        <ImageView
-            android:src="@mipmap/ic_share"
-            android:layout_gravity="center"
-            android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/ic_plus"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:background="?android:attr/selectableItemBackground"
             android:layout_weight="1"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/ic_share"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </FrameLayout>
     </LinearLayout>
 </LinearLayout>
